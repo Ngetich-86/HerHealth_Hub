@@ -18,7 +18,7 @@ const Featured = () => {
         Stay ahead, stay informed with our blogs, and be part of a community that's building tomorrow's solutions today.
           </p>
           <div className="flex justify-center items-center h-[20%]">
-          <button className='btn btn-primary button bg-[#0098FF]'>
+          <button className='btn btn-primary button bg-green-500'>
             <NavLink to="/dashboard_page"> Get started!</NavLink>
           </button>
           </div>

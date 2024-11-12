@@ -14,15 +14,10 @@ const Health = () => {
           </h3> */}
 
           <div className="flex items-center h-fit lg:h-36 w-full bg-zinc-100 mt-4 rounded-md relative overflow-hidden info-card">
-            <div className="w-1 bg-[#2409CF] absolute left-0 top-0 h-full"></div>
-            <div className="flex-1 h-full p-3 ">
-              <div className="flex items-center gap-x-3">
-                <div className="h-8 aspect-square rounded-full flex items-center justify-center bg-gradient-to-tr text-white from-[#2409CF] to-[#F52727]">
-                  {/* <BiBulb size={24} /> */}
-                </div>
-                {/* <h6 className="font-medium text-xl text-slate-700">
-                Elevate Your Expertise with Our Blogs
-                </h6> */}
+            {/* <div className="w-1 bg-[#2409CF] absolute left-0 top-0 h-full"></div> */}
+            <div className="flex-1 h-full p-3 bg-black">
+              <div className="flex items-center gap-x-3 ">
+               
               </div>
               <p className="text-sm my-2">
               Explore our curated blogs and stay updated with the latest trends in web development, cloud computing, and data analytics. Whether you're looking to sharpen 

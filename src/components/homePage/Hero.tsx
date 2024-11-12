@@ -14,10 +14,10 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-blue-900">
         <h1 className=" text-4xl lg:text-6xl font-bold mb-4">HealthHer</h1>
-        <h2 className="text-2xl lg:text-4xl font-bold mb-4">Your Gateway to Tech Excellence: We Learn, Create, Collaborate & Innovate</h2>
+        <h2 className="text-2xl lg:text-4xl font-bold mb-4">Together, Towards Healthier Lives for Women Everywhere</h2>
         <p className="text-xl mb-8 text-gray-200">Empowering Women through Technology</p>
-        <button className=' bg-secondary text-white w-[150px] mt-6 p-2 rounded-md'>
-          <NavLink to="/register"> <h2>Join Us ! </h2></NavLink>
+        <button className=' bg-green-500 text-white w-[150px] mt-6 p-2 rounded-md'>
+          <NavLink to="/register"> <h2>Join the Community ! </h2></NavLink>
         </button></div>
     </div>
   );
