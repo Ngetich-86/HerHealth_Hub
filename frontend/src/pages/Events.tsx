@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/homePage/Navbar';
 import Footer from '../components/homePage/Footer';
 
@@ -31,56 +31,56 @@ const initialEventData = [
 // Component to display the events for HealthHer platform
 const Events: React.FC = () => {
   const [events, setEvents] = useState(initialEventData);
-  const [newEvent, setNewEvent] = useState({
-    event_name: '',
-    event_description: '',
-    event_image: '',
-    event_link: '',
-  });
-  const navigate = useNavigate();
+  // const [newEvent, setNewEvent] = useState({
+  //   event_name: '',
+  //   event_description: '',
+  //   event_image: '',
+  //   event_link: '',
+  // });
+  // const navigate = useNavigate();
 
   // Redirect to the "Create Event" page
-  const handleCreateEvent = () => {
-    navigate('/create-event');
-  };
+  // const handleCreateEvent = () => {
+  //   navigate('/create-event');
+  // };
 
   // Handler for form input changes
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setNewEvent({ ...newEvent, [name]: value });
-  };
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target;
+  //   setNewEvent({ ...newEvent, [name]: value });
+  // };
 
   // Handler for form submission
-  const handleAddEvent = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleAddEvent = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    // Generate a new ID for the event
-    const newEventId = (events.length + 1).toString();
+  //   // Generate a new ID for the event
+  //   const newEventId = (events.length + 1).toString();
 
-    // Add the new event to the list of events
-    const updatedEvents = [
-      ...events,
-      {
-        ...newEvent,
-        event_id: newEventId,
-      },
-    ];
+  //   // Add the new event to the list of events
+  //   const updatedEvents = [
+  //     ...events,
+  //     {
+  //       ...newEvent,
+  //       event_id: newEventId,
+  //     },
+  //   ];
 
-    setEvents(updatedEvents);
+  //   setEvents(updatedEvents);
 
-    // Clear the form after submission
-    setNewEvent({
-      event_name: '',
-      event_description: '',
-      event_image: '',
-      event_link: '',
-    });
-  };
+  //   // Clear the form after submission
+  //   setNewEvent({
+  //     event_name: '',
+  //     event_description: '',
+  //     event_image: '',
+  //     event_link: '',
+  //   });
+  // };
 
   // Handler for deleting an event
-  const handleDeleteEvent = (eventId: string) => {
-    setEvents(events.filter(event => event.event_id !== eventId));
-  };
+  // const handleDeleteEvent = (eventId: string) => {
+  //   setEvents(events.filter(event => event.event_id !== eventId));
+  // };
 
   return (
     <>

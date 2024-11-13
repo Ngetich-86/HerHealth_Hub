@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/homePage/Navbar';
 import Footer from '../components/homePage/Footer';
 // Sample initial blog data
@@ -31,50 +31,50 @@ const initialBlogData = [
 // Component to display the blogs
 const Blogs: React.FC = () => {
   const [blogs, setBlogs] = useState(initialBlogData);
-  const [newBlog, setNewBlog] = useState({
-    blog_name: '',
-    blog_description: '',
-    blog_image: '',
-    blog_link: '',
-  });
-  const navigate = useNavigate();
+  // const [newBlog, setNewBlog] = useState({
+  //   blog_name: '',
+  //   blog_description: '',
+  //   blog_image: '',
+  //   blog_link: '',
+  // });
+  // const navigate = useNavigate();
 
   // Redirect to the "Create Blog" page
-  const handleCreateBlog = () => {
-    navigate('/create-blog');
-  };
+  // const handleCreateBlog = () => {
+  //   navigate('/create-blog');
+  // };
   // Handler for form input changes
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setNewBlog({ ...newBlog, [name]: value });
-  };
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target;
+  //   setNewBlog({ ...newBlog, [name]: value });
+  // };
 
   // Handler for form submission
-  const handleAddBlog = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const handleAddBlog = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    // Generate a new ID for the blog
-    const newBlogId = (blogs.length + 1).toString();
+  //   // Generate a new ID for the blog
+  //   const newBlogId = (blogs.length + 1).toString();
 
-    // Add the new blog to the list of blogs
-    const updatedBlogs = [
-      ...blogs,
-      {
-        ...newBlog,
-        blog_id: newBlogId,
-      },
-    ];
+  //   // Add the new blog to the list of blogs
+  //   const updatedBlogs = [
+  //     ...blogs,
+  //     {
+  //       ...newBlog,
+  //       blog_id: newBlogId,
+  //     },
+  //   ];
 
-    setBlogs(updatedBlogs);
+  //   setBlogs(updatedBlogs);
 
-    // Clear the form after submission
-    setNewBlog({
-      blog_name: '',
-      blog_description: '',
-      blog_image: '',
-      blog_link: '',
-    });
-  };
+  //   // Clear the form after submission
+  //   setNewBlog({
+  //     blog_name: '',
+  //     blog_description: '',
+  //     blog_image: '',
+  //     blog_link: '',
+  //   });
+  // };
 
   return (
     <>

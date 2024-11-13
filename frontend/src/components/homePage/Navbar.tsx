@@ -50,7 +50,7 @@
 // export default Navbar
 
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 // import { useSelector } from 'react-redux';
 // import { RootState } from "../../app/store";
 // import logo from "../../assets/images/logo.jpg";
@@ -104,6 +104,7 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 text-base text-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/chatbot">Chatbot</Link></li>
                         <li><Link to="/events">Events</Link></li>
                         <li><Link to="/blogs">Blogs</Link></li>
                         <li><Link to="/community">Community</Link></li>
@@ -138,6 +139,7 @@ const Navbar = () => {
                     <ul className="menu p-4 text-cards">
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/">Home</Link></li>
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/about-us">About Us</Link></li>
+                        <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/chatbot">Chatbot</Link></li>
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/events">Events</Link></li>
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/blogs">Blogs </Link></li>
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/community">Community</Link></li>

@@ -1,10 +1,9 @@
 
 import React, { useEffect } from 'react';
 import Footer from '../components/homePage/Footer';
-import { Navigate } from 'react-router-dom';
 import Navbar from '../components/homePage/Navbar';
 import Team from '../components/Team';
-// import Team from "../components/team";
+
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
@@ -28,8 +27,6 @@ const AboutUs: React.FC = () => {
     <>
       <Navbar />
       <div className="bg-gray-900 text-white mx-auto px-4 py-8">
-       
-
         <div className="text-center">
           <h1 className="font-bold text-3xl md:text-4xl text-cards">Our Goals</h1>
         </div>
