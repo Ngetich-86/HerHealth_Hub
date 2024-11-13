@@ -51,18 +51,18 @@ const Chatbot: React.FC = () => {
     <Navbar />
     <div className="flex justify-center items-center min-h-screen bg-gray-900">
       <div className="bg-white p-5 rounded-lg shadow-lg w-full max-w-md">
-        <h1 className="text-center text-2xl font-bold mb-4">HealthHer🤹‍♀️ Chatbot</h1>
+        <h1 className="text-center text-2xl font-bold mb-4 text-black">HealthHer🤹‍♀️ Chatbot</h1>
 
         <div
           id="chat-history"
-          className="overflow-y-scroll max-h-72 mb-4 p-2 border border-gray-900 rounded-lg"
+          className="overflow-y-scroll max-h-72 mb-4 p-2 border border-gray-900 rounded-lg text-black"
         >
           {chatHistory.map((chat, index) => (
             <div
               key={index}
               className={`p-2 mb-2 rounded-lg ${
                 chat.sender === 'user'
-                  ? 'bg-gray-200 text-right'
+                  ? 'bg-gray-100 text-right'
                   : 'bg-green-100 text-left'
               }`}
             >
@@ -82,7 +82,7 @@ const Chatbot: React.FC = () => {
           />
           <button
             type="submit"
-            className="btn btn-primary"
+            className="btn btn-primary "
             disabled={loading} // Disable the button when loading
           >
             Send
