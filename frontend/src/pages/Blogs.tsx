@@ -30,7 +30,7 @@ const initialBlogData = [
 
 // Component to display the blogs
 const Blogs: React.FC = () => {
-  const [blogs, setBlogs] = useState(initialBlogData);
+  const [blogs] = useState(initialBlogData);
   // const [newBlog, setNewBlog] = useState({
   //   blog_name: '',
   //   blog_description: '',

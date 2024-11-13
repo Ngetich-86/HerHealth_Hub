@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/homePage/Navbar';
 import Footer from '../components/homePage/Footer';
-import { APIDomain } from '../Utils/ApiDomain';
+import { APIDomain } from '../Utils/APIDomain';
 
 const Chatbot: React.FC = () => {
   const [userInput, setUserInput] = useState<string>('');
@@ -55,7 +55,7 @@ const Chatbot: React.FC = () => {
 
         <div
           id="chat-history"
-          className="overflow-y-scroll max-h-72 mb-4 p-2 border border-gray-200 rounded-lg"
+          className="overflow-y-scroll max-h-72 mb-4 p-2 border border-gray-900 rounded-lg"
         >
           {chatHistory.map((chat, index) => (
             <div

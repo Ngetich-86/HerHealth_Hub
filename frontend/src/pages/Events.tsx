@@ -30,7 +30,7 @@ const initialEventData = [
 
 // Component to display the events for HealthHer platform
 const Events: React.FC = () => {
-  const [events, setEvents] = useState(initialEventData);
+  const [events] = useState(initialEventData);
   // const [newEvent, setNewEvent] = useState({
   //   event_name: '',
   //   event_description: '',
