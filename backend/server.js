@@ -5,6 +5,8 @@ import { fileURLToPath } from 'url';
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
 import cors from 'cors';
 
+dotenv.config();
+
 // Re-create __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
