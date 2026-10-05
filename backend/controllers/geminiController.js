@@ -32,7 +32,7 @@ import axios from "axios";
 export const geminiController = () => {
     // Load environment variables
     // const { GEMINI_API_KEY, GEMINI_API_URL } = process.env;
-    const GEMINI_API_KEY = 'AIzaSyDEnPuIO-w9HAKGPlqoOipS06iYS4cyTYg';
+    const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const GEMINI_API_URL = 'https://api.gemini.com/v1';
 
     // Controller function to interact with the Gemini API
